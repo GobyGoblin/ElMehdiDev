@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
@@ -11,6 +12,16 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-6 text-center z-10">
+        <div className="animate-slide-up mb-8" style={{ animationDelay: '0.1s' }}>
+          <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
+            <img 
+              src={profilePhoto} 
+              alt="EL MEHDI EL HAMMOUTI - Développeur Full Stack"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        
         <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
             <span className="hero-gradient">EL MEHDI</span>
