@@ -4,6 +4,7 @@ import { Award, Calendar, ExternalLink } from "lucide-react";
 import certAws from "@/assets/cert-aws.jpg";
 import certOracle from "@/assets/cert-oracle.jpg";
 import certGoogle from "@/assets/cert-google.jpg";
+import certCapgemini from "@/assets/cert-capgemini.jpg";
 
 const Certificates = () => {
   const certificates = [
@@ -33,6 +34,15 @@ const Certificates = () => {
       skills: ["GCP", "Container", "DevOps", "Machine Learning"],
       image: certGoogle,
       credentialId: "GCP-ACE-2023-789"
+    },
+    {
+      title: "Moroccan Youth Match Excellence",
+      issuer: "Capgemini & Arab Excellence",
+      date: "2024-2025",
+      description: "Programme complet de développement des compétences techniques et soft skills pour les jeunes talents marocains.",
+      skills: ["Leadership", "Communication", "Développement", "Gestion de projet", "Networking"],
+      image: certCapgemini,
+      credentialId: "MYME-2024-2025"
     }
   ];
 

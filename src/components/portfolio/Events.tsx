@@ -5,6 +5,8 @@ import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
 import eventDevfest from "@/assets/event-devfest.jpg";
 import eventMeetup from "@/assets/event-meetup.jpg";
 import eventHackathon from "@/assets/event-hackathon.jpg";
+import formationArabExcellence from "@/assets/formation-arab-excellence.jpg";
+import rentreScolaire from "@/assets/rentre-scolaire.jpg";
 
 const Events = () => {
   const events = [
@@ -42,6 +44,30 @@ const Events = () => {
       attendees: "150+",
       topics: ["Innovation", "Startup", "Full Stack", "Collaboration"],
       image: eventHackathon,
+      status: "completed"
+    },
+    {
+      title: "Formation Arab Excellence - Capgemini",
+      type: "Formation",
+      date: "Juin 2024 - Juin 2025",
+      location: "Maroc",
+      description: "Programme de développement des compétences techniques et soft skills pour les jeunes talents marocains, en partenariat avec Capgemini.",
+      role: "Participant",
+      attendees: "50+",
+      topics: ["Leadership", "Communication", "Développement", "Networking", "Gestion de projet"],
+      image: formationArabExcellence,
+      status: "completed"
+    },
+    {
+      title: "Rentrée Scolaire - Groupe de Promotion",
+      type: "Événement éducatif",
+      date: "Septembre 2024",
+      location: "Établissement d'enseignement",
+      description: "Événement de rentrée scolaire rassemblant la nouvelle promotion d'étudiants pour une session d'accueil et d'intégration.",
+      role: "Participant",
+      attendees: "80+",
+      topics: ["Éducation", "Intégration", "Networking", "Orientation"],
+      image: rentreScolaire,
       status: "completed"
     }
   ];
