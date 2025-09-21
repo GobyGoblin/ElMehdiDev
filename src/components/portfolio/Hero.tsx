@@ -48,21 +48,21 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+              className="hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-all duration-300"
             >
               <Github className="h-5 w-5" />
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+              className="hover:bg-[#0077B5] hover:text-white hover:border-[#0077B5] transition-all duration-300"
             >
               <Linkedin className="h-5 w-5" />
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+              className="hover:bg-[#1BA94C] hover:text-white hover:border-[#1BA94C] transition-all duration-300"
               onClick={() => window.open('https://www.hackerrank.com/profile/aiekenel123', '_blank')}
             >
               <Code className="h-5 w-5" />
