@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Code } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
@@ -50,6 +50,14 @@ const Hero = () => {
             </Button>
             <Button variant="outline" size="lg" className="hover-glow">
               <Linkedin className="h-5 w-5" />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="hover-glow"
+              onClick={() => window.open('https://www.hackerrank.com/profile/aiekenel123', '_blank')}
+            >
+              <Code className="h-5 w-5" />
             </Button>
           </div>
         </div>
