@@ -45,16 +45,24 @@ const Hero = () => {
             Contact
           </Button>
           <div className="flex gap-4">
-            <Button variant="outline" size="lg" className="hover-glow">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+            >
               <Github className="h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="hover-glow">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+            >
               <Linkedin className="h-5 w-5" />
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="hover-glow"
+              className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
               onClick={() => window.open('https://www.hackerrank.com/profile/aiekenel123', '_blank')}
             >
               <Code className="h-5 w-5" />
