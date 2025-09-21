@@ -4,7 +4,7 @@ import { Award, Calendar, ExternalLink } from "lucide-react";
 import certAws from "@/assets/cert-aws.jpg";
 import certOracle from "@/assets/cert-oracle.jpg";
 import certGoogle from "@/assets/cert-google.jpg";
-import certCapgemini from "@/assets/cert-capgemini.jpg";
+import certArabExcellence from "@/assets/cert-arab-excellence.png";
 
 const Certificates = () => {
   const certificates = [
@@ -41,7 +41,7 @@ const Certificates = () => {
       date: "2024-2025",
       description: "Programme complet de développement des compétences techniques et soft skills pour les jeunes talents marocains.",
       skills: ["Leadership", "Communication", "Développement", "Gestion de projet", "Networking"],
-      image: certCapgemini,
+      image: certArabExcellence,
       credentialId: "MYME-2024-2025"
     }
   ];
