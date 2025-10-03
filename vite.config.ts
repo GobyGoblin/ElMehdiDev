@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/animated-cv-magic/", // Le nom de votre dépôt
+  base: "/ElMehdiDev/", // Le nom de votre dépôt
 }));
