@@ -11,14 +11,14 @@ import rentreScolaire from "@/assets/rentre-scolaire.jpg";
 const Events = () => {
   const events = [
     {
-      title: "DevFest Casablanca 2024",
+      title: "GITEX Africa 2025 : Marrakech at the heart of digital innovation",
       type: "Conférence",
-      date: "15 Novembre 2024",
-      location: "Casablanca, Maroc",
-      description: "Participation au plus grand événement tech du Maroc. Sessions sur les dernières tendances en développement web, cloud computing et intelligence artificielle.",
-      role: "Participant & Speaker",
-      attendees: "500+",
-      topics: ["React", "Cloud", "AI", "DevOps"],
+      date: "16 Avril 2025",
+      location: "Casablanca, Marrakech",
+      description: "GITEX Africa 2025 est organisé par KAOUN International, en partenariat avec le ministère de la Transition Numérique et l’Agence du Développement du Digital (ADD).",
+      role: "Participant",
+      attendees: "40 000+",
+      topics: ["Web", "Cloud", "AI", "DevOps"],
       image: eventDevfest,
       status: "completed"
     },
@@ -32,18 +32,6 @@ const Events = () => {
       attendees: "80+",
       topics: ["React", "Next.js", "Performance", "Best Practices"],
       image: eventMeetup,
-      status: "completed"
-    },
-    {
-      title: "Startup Weekend Tech",
-      type: "Hackathon",
-      date: "5-7 Septembre 2024",
-      location: "Casablanca, Maroc",
-      description: "Hackathon de 54h pour développer des solutions innovantes. Développement d'une plateforme de gestion collaborative avec mon équipe.",
-      role: "Développeur Full Stack",
-      attendees: "150+",
-      topics: ["Innovation", "Startup", "Full Stack", "Collaboration"],
-      image: eventHackathon,
       status: "completed"
     },
     {
