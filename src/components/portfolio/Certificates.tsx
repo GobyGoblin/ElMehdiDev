@@ -6,7 +6,7 @@ import certArabExcellence from "@/assets/cert-capgemini.png";
 import certEtl from "@/assets/etl_certif-1.png";
 import certDocker from "@/assets/docker_certif-1.png";
 import certData from "@/assets/intro_data-1.png";
-import certPy from "@/assets/Python_projects-1.png";
+import certPy from "@/assets/Python_Projects-1.png";
 import pythonEverybodyCert from "@/assets/Python for Everybody-1.png";
 
 const Certificates = () => {
