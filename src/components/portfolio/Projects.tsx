@@ -17,7 +17,9 @@ const Projects = () => {
       category: "Full Stack",
       image: projectEcommerce,
       buttonGit: true,
-      buttonVoir: true
+      buttonVoir: true,
+      githubUrl: "https://github.com/LwazirL2awal/nuxja",
+      liveUrl: "https://nuxja.com"
     },
     {
       title: "Site web Pare-Brise Express",
@@ -26,7 +28,8 @@ const Projects = () => {
       category: "Web Development",
       image: projectParebrise,
       buttonGit: false,
-      buttonVoir: true
+      buttonVoir: true,
+      liveUrl: "https://pare-brise-express.ma"
     },
     {
       title: "Site web Galerie (gvcc.art)",
@@ -35,7 +38,8 @@ const Projects = () => {
       category: "Art & Culture",
       image: projectGallery,
       buttonGit: false,
-      buttonVoir: true
+      buttonVoir: true,
+      liveUrl: "https://gvcc.art"
     },
     {
       title: "Application Micro-Services",
@@ -44,7 +48,8 @@ const Projects = () => {
       category: "Architecture",
       image: projectMicroservices,
       buttonGit: true,
-      buttonVoir: false
+      buttonVoir: false,
+      githubUrl: "https://github.com/LwazirL2awal/micro-services"
     },
     {
       title: "Algorithmes Dijkstra",
@@ -53,7 +58,8 @@ const Projects = () => {
       category: "Algorithms",
       image: projectAlgorithm,
       buttonGit: true,
-      buttonVoir: false
+      buttonVoir: false,
+      githubUrl: "https://github.com/LwazirL2awal/dijkstra-algorithm"
     }
   ];
 
@@ -108,18 +114,18 @@ const Projects = () => {
               </div>
               
               <div className="flex gap-2">
-                if (project.buttonGit) {
-                  <Button size="sm" variant="outline" className="flex-1">
-                  <Github className="h-4 w-4 mr-2" />
-                  Code
-                </Button>
-                }
-                if (project.buttonVoir) {
-                  <Button size="sm" className="flex-1">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  Voir
-                </Button>
-                }
+                {project.buttonGit && (
+                  <Button size="sm" variant="outline" className="flex-1" href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4 mr-2" />
+                    Code
+                  </Button>
+                )}
+                {project.buttonVoir && (
+                  <Button size="sm" className="flex-1" href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    Voir
+                  </Button>
+                )}
               </div>
             </Card>
           ))}
