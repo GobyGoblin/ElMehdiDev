@@ -5,13 +5,13 @@ import { Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Stagiaire en Ingénierie Informatique",
+      title: "Ingénierie Informatique Fullstack Java/Angular",
       company: "CAPGEMINI",
       location: "Casablanca",
-      period: "Mars 2025 - Présent",
-      type: "BPJ",
+      period: "Aôut 2025 - Présent",
+      type: "CDI",
       description: "Participation à un projet de refonte et évolution des systèmes applicatifs de gestion des garanties, entre systèmes bancaires, ATRIUM côté Apt et Extranet côté banque de centre SAFe.",
-      technologies: ["Java 8", "Spring", "Angular", "ATRIUM", "SAFe"]
+      technologies: ["Java 21", "Spring Boot", "Angular 19", "AWS", "SAFe", "DDD","Jenkins", "Git", "Maven", "PostgreSQL", "MySQL"]
     },
     {
       title: "Développeur Fullstack",
@@ -24,12 +24,12 @@ const Experience = () => {
     },
     {
       title: "Stagiaire en Ingénierie Informatique",
-      company: "UBEMBENSCH",
+      company: "UBERMENSCH",
       location: "Casablanca",
       period: "Juin 2024 - Sept 2024",
       type: "Stage",
       description: "Développer et déployer une application informatique extensible et modulaire à une Bona Facturation. Inspection des modèles de conception pour garantir le bon fonctionnement de l'application.",
-      technologies: ["Design Patterns", "Architecture Modulaire", "Développement Extensible"]
+      technologies: ["PHP","Laravel","Voyager","Design Patterns", "Architecture Modulaire", "Développement Extensible"]
     }
   ];
 
@@ -37,7 +37,7 @@ const Experience = () => {
     <section className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 hero-gradient">Expérience</h2>
+          <h2 className="text-4xl font-bold mb-4 hero-gradient">Expériences</h2>
           <p className="text-xl text-muted-foreground">
             Mon parcours professionnel et mes projets récents
           </p>

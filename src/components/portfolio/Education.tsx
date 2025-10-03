@@ -5,27 +5,27 @@ const Education = () => {
   const educationData = [
     {
       degree: "Master en Informatique",
-      institution: "Université de Technologie",
-      location: "Paris, France", 
-      period: "2020 - 2022",
-      description: "Spécialisation en développement logiciel et intelligence artificielle",
-      grade: "Mention Très Bien"
+      institution: "Ecole Marocaine Des Sciences De L'Ingenieur (EMSI)",
+      location: "Casablanca, Maroc", 
+      period: "2022 - 2025",
+      description: "Méthodes Informatiques Appliquées à la Gestion des Entreprises (MIAGE)",
+      grade: "Mention Bien"
     },
     {
-      degree: "Licence en Informatique",
-      institution: "Université Paris-Sud",
-      location: "Orsay, France",
-      period: "2017 - 2020", 
+      degree: "Diplôme Technicien Spécialisé en Développement Informatique",
+      institution: "Institut specialisé de gestion et d'informatique (ISGI)",
+      location: "Casablanca, Maroc",
+      period: "2020 - 2022", 
       description: "Formation générale en informatique, programmation et systèmes",
-      grade: "Mention Bien"
+      grade: "Mention Très Bien"
     },
     {
       degree: "Baccalauréat Scientifique",
       institution: "Lycée International",
       location: "Casablanca, Maroc",
-      period: "2016 - 2017",
-      description: "Option Mathématiques et Sciences Physiques",
-      grade: "Mention Très Bien"
+      period: "2020",
+      description: "Option Sciences Physiques",
+      grade: "Mention Bien"
     }
   ];
 

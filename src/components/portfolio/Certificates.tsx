@@ -1,49 +1,87 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Calendar, ExternalLink } from "lucide-react";
-import certAws from "@/assets/cert-aws.jpg";
-import certOracle from "@/assets/cert-oracle.jpg";
-import certGoogle from "@/assets/cert-google.jpg";
-import certArabExcellence from "@/assets/cert-arab-excellence.png";
+import certOracle from "@/assets/cert-oracle.png";
+import certArabExcellence from "@/assets/cert-capgemini.png";
+import certEtl from "@/assets/etl_certif-1.png";
+import certDocker from "@/assets/docker_certif-1.png";
+import certData from "@/assets/intro_data-1.png";
+import certPy from "@/assets/Python_projects-1.png";
+import pythonEverybodyCert from "@/assets/Python for Everybody-1.png";
 
 const Certificates = () => {
   const certificates = [
     {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2024",
-      description: "Certification validant les connaissances fondamentales du cloud AWS, incluant les services principaux, la sécurité et l'architecture.",
-      skills: ["Cloud Computing", "AWS Services", "Architecture", "Sécurité"],
-      image: certAws,
-      credentialId: "AWS-CPF-2024-001"
+      title: "Introduction to Data Engineering",
+      issuer: "IBM (via Coursera)",
+      date: "2025-06-10",
+      description: "Foundations of data engineering: ETL concepts, data pipelines and relational databases.",
+      skills: ["Data Engineering", "ETL Concepts", "Data Pipelines", "Relational Databases"],
+      image: certData,
+      credentialId: "GCYPIC7YIFLN",
+      url: "https://www.coursera.org/account/accomplishments/verify/GCYPIC7YIFLN"
     },
     {
-      title: "Oracle Database Fundamentals",
-      issuer: "Oracle Corporation",
-      date: "2023",
-      description: "Certification Oracle Database démontrant la maîtrise des concepts fondamentaux des bases de données relationnelles.",
-      skills: ["SQL", "Database Design", "Performance", "Administration"],
-      image: certOracle,
-      credentialId: "ORA-DB-2023-045"
+      title: "Python for Everybody (Specialization)",
+      issuer: "University of Michigan (via Coursera)",
+      date: "2023-03-28",
+      description: "Python specialization covering programming, data structures, web APIs, databases and visualization.",
+      skills: ["Python", "Data Structures", "Databases (SQL)", "APIs", "Data Retrieval", "Visualization"],
+      image: pythonEverybodyCert,
+      credentialId: "C24JNUGA5DBG",
+      url: "https://www.coursera.org/account/accomplishments/specialization/C24JNUGA5DBG"
     },
     {
-      title: "Google Cloud Associate",
-      issuer: "Google Cloud",
-      date: "2023",
-      description: "Certification Google Cloud Platform couvrant les services essentiels et les meilleures pratiques du cloud.",
-      skills: ["GCP", "Container", "DevOps", "Machine Learning"],
-      image: certGoogle,
-      credentialId: "GCP-ACE-2023-789"
+      title: "Python Project for Data Engineering",
+      issuer: "IBM (via Coursera)",
+      date: "2025-06-23",
+      description: "Practical project implementing Python for data transformation and ETL workflows.",
+      skills: ["Python", "Data Transformation", "ETL Automation", "File Handling", "APIs"],
+      image: certPy,
+      credentialId: "V4L2ALCUI41H",
+      url: "https://www.coursera.org/account/accomplishments/verify/V4L2ALCUI41H"
     },
     {
-      title: "Moroccan Youth Match Excellence",
+      title: "Moroccan Youth Match Excellence (MYME)",
       issuer: "Capgemini & Arab Excellence",
       date: "2024-2025",
-      description: "Programme complet de développement des compétences techniques et soft skills pour les jeunes talents marocains.",
-      skills: ["Leadership", "Communication", "Développement", "Gestion de projet", "Networking"],
+      description: "Program covering soft skills, communication, teamwork, coding, and IT project-based solutions.",
+      skills: ["Communication", "Networking", "Public Speaking", "Time Management", "Teamwork", "Coding", "Digital Skills"],
       image: certArabExcellence,
-      credentialId: "MYME-2024-2025"
+      credentialId: "MYME-2024-2025",
+      url: ""
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2024 Certified Foundations Associate",
+      issuer: "Oracle",
+      date: "2024-10-21",
+      description: "Certification covering foundational cloud concepts, OCI services and cloud security basics.",
+      skills: ["Cloud Infrastructure", "Oracle Cloud (OCI)", "Cloud Security", "Cloud Procurement"],
+      image: certOracle,
+      credentialId: "OCI-2024-FOUNDATIONS",
+      url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=68D6516453B3547FFC72470D925F86220E564471E7293245541B2E45FE41356E"
+    },
+    {
+      title: "Introduction to Containers with Docker, Kubernetes & OpenShift",
+      issuer: "IBM (via Coursera)",
+      date: "2024-05-21",
+      description: "Introduction to containerization with Docker, Kubernetes orchestration and OpenShift platform.",
+      skills: ["Docker", "Kubernetes", "OpenShift", "Containerization"],
+      image: certDocker,
+      credentialId: "R8JFLLNUBMXD",
+      url: "https://www.coursera.org/account/accomplishments/verify/R8JFLLNUBMXD"
+    },
+    {
+      title: "ETL and Data Pipelines with Shell, Airflow and Kafka",
+      issuer: "IBM (via Coursera)",
+      date: "2025-09-07",
+      description: "Hands-on course building ETL pipelines with Shell scripting, Apache Airflow and Apache Kafka.",
+      skills: ["ETL", "Shell Scripting", "Airflow", "Kafka", "Data Pipelines"],
+      image: certEtl,
+      credentialId: "N6HA39MKXJV",
+      url: "https://www.coursera.org/account/accomplishments/verify/N6HA3S9MKXJV"
     }
+
   ];
 
   return (
@@ -73,9 +111,16 @@ const Certificates = () => {
           {certificates.map((cert, index) => (
             <Card 
               key={cert.title}
-              className="portfolio-card hover-lift animate-slide-up group overflow-hidden"
+              className="portfolio-card hover-lift animate-slide-up group overflow-hidden relative"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              <a 
+                href={cert.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-20"
+                aria-label={`View ${cert.title} certificate`}
+              >
               <div className="relative overflow-hidden">
                 <img 
                   src={cert.image} 
@@ -118,6 +163,7 @@ const Certificates = () => {
                   ID: {cert.credentialId}
                 </div>
               </CardContent>
+              </a>
             </Card>
           ))}
         </div>

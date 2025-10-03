@@ -30,10 +30,10 @@ const Languages = () => {
     },
     {
       language: "Anglais",
-      level: "B2",
-      proficiency: 75,
+      level: "C1",
+      proficiency: 85,
       flag: "🇬🇧",
-      description: "Niveau intermédiaire-avancé - Usage technique"
+      description: "Niveau avancé - Usage professionnel courant"
     }
   ];
 

@@ -15,35 +15,45 @@ const Projects = () => {
       description: "Création d'un site web e-Commerce en utilisant Django et Angular. Intégration complète avec système de paiement et gestion des commandes.",
       technologies: ["Django", "Angular", "API", "E-Commerce"],
       category: "Full Stack",
-      image: projectEcommerce
+      image: projectEcommerce,
+      buttonGit: true,
+      buttonVoir: true
     },
     {
       title: "Site web Pare-Brise Express",
       description: "Création d'un site web pour Pare-brise-express.ma utilisant Voyager. Interface moderne et responsive pour la gestion des services automobiles.",
       technologies: ["Voyager", "PHP", "MySQL", "Responsive Design"],
       category: "Web Development",
-      image: projectParebrise
+      image: projectParebrise,
+      buttonGit: false,
+      buttonVoir: true
     },
     {
       title: "Site web Galerie (gvcc.art)",
       description: "Création d'un site web pour Galerie Venise Cadre en utilisant PHP Voyager. Plateforme d'exposition d'œuvres artistiques avec interface élégante.",
       technologies: ["PHP", "Voyager", "MySQL", "Gallery Management"],
       category: "Art & Culture",
-      image: projectGallery
+      image: projectGallery,
+      buttonGit: false,
+      buttonVoir: true
     },
     {
       title: "Application Micro-Services",
       description: "Création d'une Application Micro-Services utilisant Spring Boot, Spring Cloud et Thymeleaf. Architecture distribuée et scalable.",
       technologies: ["Spring Boot", "Spring Cloud", "Thymeleaf", "Microservices"],
       category: "Architecture",
-      image: projectMicroservices
+      image: projectMicroservices,
+      buttonGit: true,
+      buttonVoir: false
     },
     {
       title: "Algorithmes Dijkstra",
       description: "Création de l'algorithme Dijkstra en utilisant Java. Implémentation optimisée pour la recherche de plus courts chemins.",
       technologies: ["Java", "Algorithmes", "Graphes", "Optimisation"],
       category: "Algorithms",
-      image: projectAlgorithm
+      image: projectAlgorithm,
+      buttonGit: true,
+      buttonVoir: false
     }
   ];
 
@@ -98,14 +108,18 @@ const Projects = () => {
               </div>
               
               <div className="flex gap-2">
-                <Button size="sm" variant="outline" className="flex-1">
+                if (project.buttonGit) {
+                  <Button size="sm" variant="outline" className="flex-1">
                   <Github className="h-4 w-4 mr-2" />
                   Code
                 </Button>
-                <Button size="sm" className="flex-1">
+                }
+                if (project.buttonVoir) {
+                  <Button size="sm" className="flex-1">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Voir
                 </Button>
+                }
               </div>
             </Card>
           ))}
