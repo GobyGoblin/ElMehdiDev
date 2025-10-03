@@ -2,9 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
-import eventDevfest from "@/assets/event-devfest.jpg";
-import eventMeetup from "@/assets/event-meetup.jpg";
-import eventHackathon from "@/assets/event-hackathon.jpg";
+import eventDevfest from "@/assets/Gitex.jpg";
+import eventMeetup from "@/assets/gvcc.jpg";
 import formationArabExcellence from "@/assets/formation-arab-excellence.jpg";
 import rentreScolaire from "@/assets/rentre-scolaire.jpg";
 
@@ -23,14 +22,14 @@ const Events = () => {
       status: "completed"
     },
     {
-      title: "React Meetup Rabat",
-      type: "Meetup",
-      date: "20 Octobre 2024",
-      location: "Rabat, Maroc",
-      description: "Présentation sur les bonnes pratiques React et les nouvelles fonctionnalités. Échanges avec la communauté des développeurs frontend.",
-      role: "Présentateur",
-      attendees: "80+",
-      topics: ["React", "Next.js", "Performance", "Best Practices"],
+      title: "Invitation à la Galerie GVCC",
+      type: "Événement",
+      date: "2025",
+      location: "Casablanca",
+      description: "Invitation officielle à la Galerie GVCC suite à la réalisation et mise en ligne de leur site web.",
+      role: "Invité & Développeur Web",
+      attendees: "Clients & partenaires GVCC",
+      topics: ["Web Development", "PHP", "Conception Web","Voyager"],
       image: eventMeetup,
       status: "completed"
     },
