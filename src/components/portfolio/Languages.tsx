@@ -24,7 +24,7 @@ const Languages = () => {
     {
       language: "Allemand",
       level: "A2",
-      proficiency: 60,
+      proficiency: 30,
       flag: "🇩🇪", 
       description: "Niveau élémentaire - Conversations simples"
     },

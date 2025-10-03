@@ -21,8 +21,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Téléphone",
-      value: "+212 6 XX XX XX XX",
-      link: "tel:+212600000000"
+      value: "+212 6 29 14 77 79",
+      link: "tel:+212629147779"
     }
   ];
 
@@ -42,7 +42,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="animate-slide-up">
@@ -102,42 +102,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          
-          {/* Contact Form */}
-          <Card className="portfolio-card p-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <h3 className="text-2xl font-semibold mb-6">Envoyez un Message</h3>
-            
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Nom</label>
-                  <Input placeholder="Votre nom" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Email</label>
-                  <Input type="email" placeholder="votre@email.com" />
-                </div>
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium mb-2 block">Sujet</label>
-                <Input placeholder="Sujet de votre message" />
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium mb-2 block">Message</label>
-                <Textarea 
-                  placeholder="Votre message..."
-                  className="min-h-[120px]"
-                />
-              </div>
-              
-              <Button className="w-full glow-effect hover:scale-[1.02] transition-all duration-300">
-                <Mail className="mr-2 h-4 w-4" />
-                Envoyer le Message
-              </Button>
-            </form>
-          </Card>
         </div>
       </div>
     </section>

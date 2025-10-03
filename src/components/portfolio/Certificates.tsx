@@ -109,62 +109,61 @@ const Certificates = () => {
         {/* Certificates Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((cert, index) => (
-            <Card 
+            <a 
               key={cert.title}
-              className="portfolio-card hover-lift animate-slide-up group overflow-hidden relative"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              href={cert.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
             >
-              <a 
-                href={cert.url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="absolute inset-0 z-20"
-                aria-label={`View ${cert.title} certificate`}
+              <Card 
+                className="portfolio-card hover-lift animate-slide-up group overflow-hidden relative h-full"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={cert.image} 
-                  alt={cert.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
-                    <ExternalLink className="w-4 h-4 text-white" />
-                  </div>
-                </div>
-              </div>
-              
-              <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
-                    {cert.title}
-                  </h3>
-                  <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                    <Calendar className="w-4 h-4" />
-                    {cert.date}
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
+                      <ExternalLink className="w-4 h-4 text-white" />
+                    </div>
                   </div>
                 </div>
                 
-                <p className="text-primary font-medium mb-2">{cert.issuer}</p>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  {cert.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {cert.skills.map((skill) => (
-                    <Badge key={skill} variant="outline" className="text-xs hover:bg-accent/20 transition-colors duration-200">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-                
-                <div className="text-xs text-muted-foreground font-mono pt-2 border-t border-border/50">
-                  ID: {cert.credentialId}
-                </div>
-              </CardContent>
-              </a>
-            </Card>
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                      {cert.title}
+                    </h3>
+                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4" />
+                      {cert.date}
+                    </div>
+                  </div>
+                  
+                  <p className="text-primary font-medium mb-2">{cert.issuer}</p>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    {cert.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {cert.skills.map((skill) => (
+                      <Badge key={skill} variant="outline" className="text-xs hover:bg-accent/20 transition-colors duration-200">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                  
+                  <div className="text-xs text-muted-foreground font-mono pt-2 border-t border-border/50">
+                    ID: {cert.credentialId}
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
 

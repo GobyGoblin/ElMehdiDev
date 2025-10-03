@@ -114,17 +114,21 @@ const Projects = () => {
               </div>
               
               <div className="flex gap-2">
-                {project.buttonGit && (
-                  <Button size="sm" variant="outline" className="flex-1" href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </Button>
+                {project.buttonGit && project.githubUrl && (
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button size="sm" variant="outline" className="w-full">
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </Button>
+                  </a>
                 )}
-                {project.buttonVoir && (
-                  <Button size="sm" className="flex-1" href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Voir
-                  </Button>
+                {project.buttonVoir && project.liveUrl && (
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button size="sm" className="w-full">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Voir
+                    </Button>
+                  </a>
                 )}
               </div>
             </Card>
