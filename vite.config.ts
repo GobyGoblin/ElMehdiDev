@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/ElMehdiDev/", // Le nom de votre dépôt
+  base: "/", // Use root base so assets resolve correctly on lovable.app
 }));
