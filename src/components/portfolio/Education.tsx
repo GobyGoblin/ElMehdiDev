@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { GraduationCap, Calendar } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { GraduationCap, Calendar, Award } from "lucide-react";
 
 const Education = () => {
   const educationData = [
@@ -17,7 +18,8 @@ const Education = () => {
       location: "Casablanca, Maroc",
       period: "2020 - 2022", 
       description: "Formation générale en informatique, programmation et systèmes",
-      grade: "Mention Très Bien"
+      grade: "Mention Très Bien",
+      isMajor: true
     },
     {
       degree: "Baccalauréat Scientifique",
@@ -48,21 +50,54 @@ const Education = () => {
               {educationData.map((education, index) => (
                 <div 
                   key={index}
-                  className="relative flex items-start gap-8 animate-slide-up"
+                  className="relative flex items-start gap-8 animate-slide-up group"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   {/* Timeline dot */}
                   <div className="relative z-10 flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center glow-effect">
-                      <GraduationCap className="h-8 w-8 text-primary-foreground" />
+                    <div className={`w-16 h-16 rounded-full flex items-center justify-center ${
+                      education.isMajor 
+                        ? 'bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 shadow-[0_0_30px_rgba(251,191,36,0.5)] group-hover:shadow-[0_0_50px_rgba(251,191,36,0.8)] transition-all duration-500'
+                        : 'bg-gradient-to-br from-primary to-accent glow-effect'
+                    }`}>
+                      {education.isMajor ? (
+                        <Award className="h-8 w-8 text-white" />
+                      ) : (
+                        <GraduationCap className="h-8 w-8 text-primary-foreground" />
+                      )}
                     </div>
                   </div>
                   
                   {/* Content card */}
-                  <Card className="portfolio-card p-6 flex-1 hover-lift">
+                  <Card className={`p-6 flex-1 relative overflow-hidden ${
+                    education.isMajor 
+                      ? 'border-2 border-yellow-500/50 bg-gradient-to-br from-yellow-500/5 via-amber-500/5 to-background hover:border-yellow-400 hover:shadow-[0_0_40px_rgba(251,191,36,0.3)] transition-all duration-500 hover:scale-[1.02]'
+                      : 'portfolio-card hover-lift'
+                  }`}>
+                    {education.isMajor && (
+                      <>
+                        {/* Gold accent corner */}
+                        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-400/20 to-transparent rounded-bl-full"></div>
+                        
+                        {/* Major badge - visible on hover */}
+                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <Badge className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 text-white border-none shadow-lg">
+                            <Award className="h-3 w-3 mr-1" />
+                            Major de Promotion
+                          </Badge>
+                        </div>
+                      </>
+                    )}
+                    
                     <div className="space-y-4">
                       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
-                        <h3 className="text-xl font-bold text-primary">{education.degree}</h3>
+                        <h3 className={`text-xl font-bold ${
+                          education.isMajor 
+                            ? 'bg-gradient-to-r from-yellow-600 via-amber-600 to-yellow-700 bg-clip-text text-transparent'
+                            : 'text-primary'
+                        }`}>
+                          {education.degree}
+                        </h3>
                         <div className="flex items-center gap-2 text-muted-foreground">
                           <Calendar className="h-4 w-4" />
                           <span className="text-sm">{education.period}</span>
@@ -77,7 +112,11 @@ const Education = () => {
                       <p className="text-muted-foreground">{education.description}</p>
                       
                       <div className="inline-block">
-                        <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">
+                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                          education.isMajor
+                            ? 'bg-gradient-to-r from-yellow-400/20 via-amber-500/20 to-yellow-600/20 text-yellow-700 dark:text-yellow-400 border border-yellow-500/30'
+                            : 'bg-accent/20 text-accent'
+                        }`}>
                           {education.grade}
                         </span>
                       </div>
