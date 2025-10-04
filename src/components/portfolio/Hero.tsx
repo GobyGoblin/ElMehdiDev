@@ -49,6 +49,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-all duration-300"
+              onClick={() => window.open('https://github.com/GobyGoblin', '_blank')}
             >
               <Github className="h-5 w-5" />
             </Button>
@@ -56,6 +57,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="hover:bg-[#0077B5] hover:text-white hover:border-[#0077B5] transition-all duration-300"
+              onClick={() => window.open('https://www.linkedin.com/in/el-mehdi-el-hammouti-dev/', '_blank')}
             >
               <Linkedin className="h-5 w-5" />
             </Button>

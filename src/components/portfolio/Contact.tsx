@@ -27,8 +27,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, name: "GitHub", link: "#" },
-    { icon: Linkedin, name: "LinkedIn", link: "#" },
+    { icon: Github, name: "GitHub", link: "https://github.com/GobyGoblin" },
+    { icon: Linkedin, name: "LinkedIn", link: "https://www.linkedin.com/in/el-mehdi-el-hammouti-dev/" },
     { icon: Mail, name: "Email", link: "mailto:elmehdielelhammouti@gmail.com" }
   ];
 
