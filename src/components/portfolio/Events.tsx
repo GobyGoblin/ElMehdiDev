@@ -6,6 +6,7 @@ import eventDevfest from "@/assets/Gitex.jpg";
 import eventMeetup from "@/assets/gvcc.jpg";
 import formationArabExcellence from "@/assets/formation-arab-excellence.jpg";
 import rentreScolaire from "@/assets/rentre-scolaire.jpg";
+import eventHaouz from "@/assets/ambit.png";
 
 const Events = () => {
   const events = [
@@ -56,7 +57,19 @@ const Events = () => {
       topics: ["Éducation", "Intégration", "Networking", "Orientation"],
       image: rentreScolaire,
       status: "completed"
-    }
+    },    
+    {
+      title: "Caravane humanitaire à l’Haouz",
+      type: "Humanitaire",
+      date: "2023",
+      location: "Province d’El Haouz, Maroc",
+      description: "Participation à une caravane humanitaire organisée par l’association Ambition Jeunes pour apporter aide et soutien aux populations touchées.",
+      role: "Bénévole",
+      attendees: "100+ bénévoles et habitants bénéficiaires",
+      topics: ["Solidarité", "Humanitaire", "Jeunesse", "Engagement citoyen"],
+      image: eventHaouz,
+      status: "completed"
+    } 
   ];
 
   return (
