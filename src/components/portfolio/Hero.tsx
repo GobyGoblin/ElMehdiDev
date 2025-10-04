@@ -40,7 +40,11 @@ const Hero = () => {
         </div>
         
         <div className="animate-slide-up flex flex-col sm:flex-row gap-4 justify-center items-center mb-12" style={{ animationDelay: '0.6s' }}>
-          <Button size="lg" className="glow-effect hover:scale-105 transition-all duration-300">
+          <Button 
+            size="lg" 
+            className="glow-effect hover:scale-105 transition-all duration-300"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <Mail className="mr-2 h-5 w-5" />
             Contact
           </Button>
