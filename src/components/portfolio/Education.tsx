@@ -80,7 +80,7 @@ const Education = () => {
                         <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-400/20 to-transparent rounded-bl-full"></div>
                         
                         {/* Major badge - visible on hover */}
-                        <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <Badge className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 text-white border-none shadow-lg">
                             <Award className="h-3 w-3 mr-1" />
                             Major de Promotion
