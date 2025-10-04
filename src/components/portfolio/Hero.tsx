@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, Code } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Code, FileText } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
@@ -47,6 +47,15 @@ const Hero = () => {
           >
             <Mail className="mr-2 h-5 w-5" />
             Contact
+          </Button>
+          <Button 
+            size="lg" 
+            variant="outline"
+            className="hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            onClick={() => window.open('/El_Hammouti_El_Mehdi_CV.pdf', '_blank')}
+          >
+            <FileText className="mr-2 h-5 w-5" />
+            Voir CV
           </Button>
           <div className="flex gap-4">
             <Button 
