@@ -3,8 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
-import projectParebrise from "@/assets/project-parebrise.jpg";
-import projectGallery from "@/assets/project-gallery.jpg";
+import projectParebrise from "@/assets/pare.png";
+import projectGallery from "@/assets/gvccWeb.png";
 import projectMicroservices from "@/assets/project-microservices.jpg";
 import projectAlgorithm from "@/assets/project-algorithm.jpg";
 
@@ -17,9 +17,8 @@ const Projects = () => {
       category: "Full Stack",
       image: projectEcommerce,
       buttonGit: true,
-      buttonVoir: true,
-      githubUrl: "https://github.com/LwazirL2awal/nuxja",
-      liveUrl: "https://nuxja.com"
+      buttonVoir: false,
+      githubUrl: "https://github.com/LwazirL2awal/nuxja"
     },
     {
       title: "Site web Pare-Brise Express",
@@ -29,7 +28,7 @@ const Projects = () => {
       image: projectParebrise,
       buttonGit: false,
       buttonVoir: true,
-      liveUrl: "https://pare-brise-express.ma"
+      liveUrl: "https://parebriseexpress.ma/"
     },
     {
       title: "Site web Galerie (gvcc.art)",
