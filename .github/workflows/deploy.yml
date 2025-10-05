@@ -35,6 +35,8 @@ jobs:
       
       - name: Build
         run: npm run build
+        env:
+          VITE_BASE_URL: /ElMehdiDev/
       
       - name: SPA fallback for GitHub Pages
         run: cp dist/index.html dist/404.html

@@ -3,6 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
     <title>El Mehdi El Hammouti - Portfolio</title>
     <meta name="description" content="Développeur Full Stack spécialisé en Java, Spring Boot, Angular et DevOps. Portfolio professionnel d'El Mehdi El Hammouti, ingénieur informatique basé à Casablanca, Maroc." />
     <meta name="author" content="El Mehdi El Hammouti" />
@@ -16,6 +33,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/src/assets/logo.png">
+    <link rel="shortcut icon" type="image/png" href="/src/assets/logo.png">
+    <link rel="apple-touch-icon" href="/src/assets/logo.png">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="shortcut icon" type="image/png" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
   </head>
 
   <body>
