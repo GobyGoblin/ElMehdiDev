@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/ElMehdiDev/", // GitHub Pages base path for repository
+  base: mode === "development" ? "/" : "/ElMehdiDev/", // Use root in dev, repo path in prod
 }));
