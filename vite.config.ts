@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/", // Use root base so assets resolve correctly on lovable.app
+  base: "/ElMehdiDev/", // GitHub Pages base path for repository
 }));
