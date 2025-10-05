@@ -7,6 +7,7 @@ import projectParebrise from "@/assets/pare.png";
 import projectGallery from "@/assets/gvccWeb.png";
 import projectMicroservices from "@/assets/project-microservices.jpg";
 import projectAlgorithm from "@/assets/project-algorithm.jpg";
+import projectDataETL from "@/assets/project-data-etl.jpg";
 
 const Projects = () => {
   const projects = [
@@ -59,6 +60,16 @@ const Projects = () => {
       buttonGit: true,
       buttonVoir: false,
       githubUrl: "https://github.com/LwazirL2awal/dijkstra-algorithm"
+    },
+    {
+      title: "Instagram Data Insights",
+      description: "Projet Data Engineering qui extrait des informations publiques d'Instagram, calcule un score d'engagement et identifie les publications les plus engageantes avec visualisation.",
+      technologies: ["Python", "ETL", "Pandas", "BeautifulSoup", "Data Analysis"],
+      category: "Data Engineering",
+      image: projectDataETL,
+      buttonGit: true,
+      buttonVoir: false,
+      githubUrl: "https://github.com/GobyGoblin/Project-Data-ETL"
     }
   ];
 
